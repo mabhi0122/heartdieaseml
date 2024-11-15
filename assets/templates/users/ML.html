@@ -1,0 +1,90 @@
+{% extends 'users/userbase.html'%}
+{%block contents%}
+<script>
+
+
+</script>
+<div class="slider slider-revolution revolution-slider  fullwidth">
+  <div class="shadowWrapper">
+<center><br><br><br><br><br>
+  <h3>Add Information to Test</h3>
+  <form action="{% url 'MLResult' %}" method="POST"  style="width:100%">
+    {% csrf_token %}
+  <table class="sm-table" cellspacing="5px" cellpadding="5%"; align="center">
+    <tr>
+        <th>Fields  </th>
+        <th>Input Values </th>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td><input type="number" name="age" min="18" max="85" required> </td>
+    </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td><select name="sex" required>
+            <option value="">--Select--</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select> </td>
+    </tr>
+       <tr>
+        <td>Cp</td>
+        <td><input type="number" name="cp" min = "0" required> </td>
+    </tr>
+       <tr>
+        <td>Trestbps</td>
+        <td><input type="number" name="trestbps" min = "0" required> </td>
+    </tr>
+       <tr>
+        <td>Chol</td>
+        <td><input type="number" name="chol" min="0" required> </td>
+    </tr>
+       <tr>
+        <td>Fbs</td>
+        <td><input type="number" name="fbs" min="0" required> </td>
+    </tr>
+       <tr>
+        <td>Rest ECG</td>
+        <td><input type="number" name="restecg" min="0" required> </td>
+    </tr>
+       <tr>
+        <td>Thalach</td>
+        <td><input type="number" name="thalach" min="0" required> </td>
+    </tr>
+       <tr>
+        <td>Exang</td>
+        <td><input type="number" name="exang" min="0" required> </td>
+    </tr>
+       <tr>
+        <td>Old Peak</td>
+        <td><input type="number" name="oldpeak" min="0" required> </td>
+    </tr>
+       <tr>
+        <td>Slope</td>
+        <td><input type="number" name="slope" min="0" required> </td>
+    </tr>
+       <tr>
+        <td>CA</td>
+        <td><input type="number" name="ca" min="0" required> </td>
+    </tr>
+       <tr>
+        <td>Thal</td>
+        <td><input type="number" name="thal" min="0" required> </td>
+    </tr>
+      <tr>
+<td><button type="submit" value="Register" class="sendmail alignright">Predict</button></td>
+     </tr>
+      <th>
+          <tr>{{msg}}</tr>
+      </th>
+  </table>
+  </form>
+</center>
+      </div>
+  </div>
+
+
+
+
+{% endblock %}

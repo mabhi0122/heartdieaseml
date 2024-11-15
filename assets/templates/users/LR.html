@@ -1,0 +1,21 @@
+{% extends 'users/userbase.html'%}
+{%block contents%}
+<style>
+h1 {
+    margin-top: 10%;
+}
+</style>
+    <div class="slider slider-revolution revolution-slider  fullwidth">
+            <div class="shadowWrapper">
+                <table border="2" align="center">
+                    <center><h1>Logistic Regression Result</h1></center>
+                    <tr><td><h2>Accuracy <font color="#ea6726">{{dt_acc}}</font> </h2></tr></td>
+                    <tr><td><h2>Recall <font color="#ea6726">{{dt_recall}}</font> </h2></tr></td>
+                    <tr><td><h2>precision <font color="#ea6726">{{dt_precc}}</font> </h2></tr></td>
+                  <tr><td> <h2>f1_score<font color="#ea6726">{{dt_f1}}</font> </h2></tr></td>
+
+                </table></div>
+</div>
+{%endblock%}
+
+

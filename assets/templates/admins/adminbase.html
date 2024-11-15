@@ -1,0 +1,112 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Heart Disease</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet">
+
+        <link href="{% static 'css/templatemo-medic-care.css' %}" rel="stylesheet">
+<!--
+
+TemplateMo 566 Medic Care
+
+https://templatemo.com/tm-566-medic-care
+
+-->
+    </head>
+
+    <body id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+                       Liver Disease
+                        <strong class="d-block"></strong>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+
+
+                            <a class="navbar-brand d-none d-lg-block" href="{% url 'index' %}">
+                          Heart Disease Using Machine Learning
+                                <strong class="d-block">Comparative Study to Identify the Heart Disease Using Machine Learning Algorithms</strong>
+                            </a>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'AdminHome' %}">Home</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'RegisterUsersView' %}">UserDetails</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="{% url 'index' %}">Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+ {%block contents%}
+
+      {%endblock%}<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+<center>
+        <footer >
+
+
+
+                        <p class="copyright-text">Copyright © Alex corporation 2021
+                        <!--<br><br>Design: <a href="https://templatemo.com" target="_parent">TemplateMo</a></p>-->
+
+
+        </footer></center>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/scrollspy.min.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+<!--
+
+TemplateMo 566 Medic Care
+
+https://templatemo.com/tm-566-medic-care
+
+-->
+    </body>
+</html>
